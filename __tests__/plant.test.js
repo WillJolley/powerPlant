@@ -1,9 +1,9 @@
-import storeState from '../src/js/plant.js';
+import storeState from '../src/plant.js';
 
 describe('feed', () => {
   
   test('should increase soil state by 1', () => {
     const newState = stateControl(feed);
-    expect(storeState).toEqual(1);
+    expect(newState).toEqual(1);
   })
 });
