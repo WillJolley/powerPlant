@@ -18,7 +18,7 @@ const changeState = (prop) => {
   };
 };
 
-//const feed = changeState("soil")(1);
+const feed = changeState("soil")(1);
 const blueFood = changeState("soil")(5);
 
 //const hydrate = changeState("water")(1);
@@ -26,7 +26,7 @@ const blueFood = changeState("soil")(5);
 
 window.onload = function () {
   document.getElementById("feed").onclick = function () {
-    const newState = stateControl(blueFood);
+    const newState = stateControl(feed);
     document.getElementById("soil-value").innerText = `Soil: ${newState.soil}`;
   };
 
